@@ -1,0 +1,144 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-patients,
+.monthly-appointments-chart {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-patients table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-patients th,
+.recent-patients td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e1f5fe;
+}
+
+.header-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.home-button,
+.patientsearch-button,
+.appointments-button,
+.newpatients-button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+.home-button:hover,
+.patientsearch-button:hover,
+.appointments-button:hover,
+.newpatients-button:hover {
+    background-color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .menu-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items a {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Hamburger menu animation for open/close */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

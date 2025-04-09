@@ -1,0 +1,225 @@
+/* Hasta Bilgileri ve Geçmişi */
+.patient-details {
+    max-width: 500px;
+    margin: 100px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.patient-details h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.patient-details p {
+    font-size: 1.2em;
+    /* Yazı boyutunu büyüttük */
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Geçmiş ve Yeni Ziyaret Ekle Butonları */
+.details-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.details-buttons button {
+    background-color: #00796b;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.details-buttons button:hover {
+    background-color: #004d40;
+}
+
+/* Ziyaret Listesi */
+.patient-history {
+    width: 10px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #e3f2fd;
+    /* Index.php ile aynı açık mavi */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık Alanı */
+.header {
+    background-color: #e3f2fd;
+    /* Siyah arka plan */
+    color: rgba(0, 0, 0, 0.747);
+    /* Beyaz yazı */
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+
+.header-logo img {
+    height: 100px;
+    /* Logoyu büyüt */
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    /* Büyük yazı */
+    letter-spacing: 1px;
+    /* Hafif aralık */
+}
+
+/* Ana Sayfa Butonu */
+.home-button {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Hasta Detay Kutusu */
+.patient-details {
+    max-width: 500px;
+    margin: 180px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.patient-details h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.patient-details p {
+    font-size: 1.2em;
+    /* Yazı boyutunu büyüttük */
+    margin: 10px 0;
+    color: #444;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.patient-details,
+.patient-history {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patient-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.patient-history li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form {
+    display: inline-block;
+    /* Formları yan yana hizalar */
+    margin-right: 20px;
+    /* Formlar arasında boşluk bırakır */
+}
+
+button {
+    margin-top: 10px;
+}
